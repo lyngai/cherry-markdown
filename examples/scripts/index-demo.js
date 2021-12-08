@@ -84,6 +84,7 @@ var basicConfig = {
       'switchModel',
       'codeTheme',
       'export',
+      'aboutUs'
     ],
     sidebar: ['mobilePreview', 'copy'],
   },

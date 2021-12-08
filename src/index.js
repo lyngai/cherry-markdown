@@ -17,6 +17,9 @@ import Cherry from './index.core';
 import MermaidCodeEngine from '@/addons/cherry-code-block-mermaid-plugin';
 import PlantUMLCodeEngine from '@/addons/cherry-code-block-plantuml-plugin';
 import mermaid from 'mermaid';
+import { FooSyntaxPlugin } from '@/addons/cherry-foo-syntax-plugin';
+import { MarqueeSyntaxPlugin } from '@/addons/cherry-marquee-syntax-plugin';
+import { AboutUsMenuPlugin } from '@/addons/cherry-about-us-menu-plugin';
 
 const mermaidAPI = mermaid?.mermaidAPI;
 Cherry.usePlugin(MermaidCodeEngine, {
@@ -25,6 +28,9 @@ Cherry.usePlugin(MermaidCodeEngine, {
   sequence: { useMaxWidth: false, showSequenceNumbers: true },
 });
 Cherry.usePlugin(PlantUMLCodeEngine, {});
+Cherry.usePlugin(FooSyntaxPlugin, {});
+Cherry.usePlugin(MarqueeSyntaxPlugin, {});
+Cherry.usePlugin(AboutUsMenuPlugin, {});
 
 export * from './index.core';
 export default Cherry;
